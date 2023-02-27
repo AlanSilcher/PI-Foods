@@ -1,0 +1,44 @@
+.landing {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+    height: 100vh;
+    width: 100%;
+
+    
+    background: url('./Img/Landing.jpg') center center / cover no-repeat;
+
+}
+
+
+.welcome {
+    color: #44bc8c;
+    font-style: italic;
+    position:relative;
+    font-size: 130px;
+    
+}
+
+.button {
+    cursor: pointer;
+    background: #9100f8;
+   
+  
+    
+    border-radius: 15px;
+    font-style: italic;
+
+    color: #ffffff;
+    font-size: 26px;
+    padding: 9px 23px 9px 23px;
+    text-decoration: none;
+    position:relative;
+    margin-top: 5%;
+  }
+  
+  .btn:hover {
+    text-decoration: none;
+  }

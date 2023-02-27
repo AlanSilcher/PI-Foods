@@ -1,0 +1,57 @@
+.home {
+    background-image: url('./Image/Home2.jpg');
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.notRecipes{
+    font-size: 3em; 
+    color: rgb(226, 36, 255);
+    text-align: center;
+    line-height: 60vh;
+    text-indent: -0.5em; 
+}
+
+.homeNotRecipes {
+    background-image: url('./Image/Home2.jpg');
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-size: cover;
+
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.formButton {
+    background-color: #497be9;
+    border: none;
+    color: white;
+    padding: 9px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  
+
