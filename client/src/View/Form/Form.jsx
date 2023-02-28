@@ -49,7 +49,7 @@ const Form = () => {
     const validate = (form) => {
         let newErrors = { name: "", image: "", description: "", healthScore: "", steps: "", diets: "" };
       
-        if (!/^[A-Za-z]+$/.test(form.name)) {
+        if (!/^[A-Za-zñÑáéíóúÁÉÍÓÚ\s]*$/.test(form.name)) {
           newErrors.name = "Name cannot be empty and must not contain numbers";
         }
       
