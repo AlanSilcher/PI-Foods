@@ -46,9 +46,6 @@ const Home = () => {
         ) 
     }
 
-
-
-
     const lastPostIndex = currentPage * postPerPage
     const firtPostIndex = lastPostIndex - postPerPage
     const currentPosts = recipes.slice(firtPostIndex, lastPostIndex)
