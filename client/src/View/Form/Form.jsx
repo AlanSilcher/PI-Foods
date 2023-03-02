@@ -49,7 +49,7 @@ const Form = () => {
     const validate = (form) => {
         let newErrors = { name: "", image: "", description: "", healthScore: "", steps: "", diets: "" };
       
-        if (!/^[A-Za-zñÑáéíóúÁÉÍÓÚ\s]*$/.test(form.name)) {
+        if (!/^[A-Za-zñÑáéíóúÁÉÍÓÚ\s]*$/.test(form.name) || form.name === "") {
           newErrors.name = "Name cannot be empty and must not contain numbers";
         }
       
@@ -83,7 +83,7 @@ const Form = () => {
         <div>
             <label className={styles.label}>Name: </label>
             <input type="text" value={form.name} onChange={changeHandler} name="name" className={styles.text}/>
-            {errors.name && <span>{errors.name}</span>}
+            {errors.name && <span className={styles.errors}>{errors.name}</span>}
         </div>
 
         <div>
@@ -94,7 +94,7 @@ const Form = () => {
         <div>
             <label className={styles.label}>Health score: </label>
             <input type="number" value={form.healthScore} onChange={changeHandler} name="healthScore" className={styles.text}/>
-            {errors.healthScore && <span>{errors.healthScore}</span>}
+            {errors.healthScore && <span className={styles.errors}>{errors.healthScore}</span>}
         </div>
 
         <div>
@@ -110,7 +110,7 @@ const Form = () => {
         <div>
             <label className={styles.label}>Description: </label>
             <input type="text" value={form.description} onChange={changeHandler} name="description" className={styles.text}/>
-            {errors.description && <span>{errors.description}</span>}
+            {errors.description && <span className={styles.errors}>{errors.description}</span>}
         </div>
 
         <div>
