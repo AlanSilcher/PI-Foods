@@ -41,13 +41,13 @@ const Home = () => {
             <button className={styles.formButton}>Create recipe</button>
         </Link>
         </div>
-        <h1 className={styles.notRecipes}>No recipes available</h1>
+        <h1 className={styles.notRecipes}>There are no recipes with that name</h1>
         </div>
         ) 
     }
 
-    const lastPostIndex = currentPage * postPerPage
-    const firtPostIndex = lastPostIndex - postPerPage
+    const lastPostIndex = currentPage * postPerPage 
+    const firtPostIndex = lastPostIndex - postPerPage 
     const currentPosts = recipes.slice(firtPostIndex, lastPostIndex)
 
 
