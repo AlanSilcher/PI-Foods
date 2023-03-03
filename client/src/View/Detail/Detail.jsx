@@ -14,7 +14,6 @@ const Detail = (props) => {
     } ,[]) 
 
   const detail = useSelector(state => state.details)
-  console.log('estos son los detalles',detail)
 
   let sol = `${detail.description}`
   let summary = sol.replace(/<\/?b>/g,'').replace(/<\/?a[^>]*>/g, '')
@@ -30,8 +29,6 @@ const Detail = (props) => {
             <h4 className={styles.text}>Description: {summary}</h4>
             <h3 className={styles.text}>Steps: {Array.isArray(detail.steps)? detail.steps.map(el => el.step)
                 :"it doesn't have any steps"}</h3>
-            
-            
         </div>
         </div>
     )

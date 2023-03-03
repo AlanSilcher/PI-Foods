@@ -55,4 +55,11 @@
     align-items: center;
   }
 
+  .checkbox {
+    position: relative;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+  }
   

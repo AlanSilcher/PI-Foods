@@ -10,7 +10,6 @@ const Paginated = ({totalPosts, postPerPage, setcurrentPage}) => {
             {
                 pages.map((page, index) => {
                     return <button key={index} onClick={() => setcurrentPage(page)}>{page}</button>
-                    
                 })
             }
         </div>

@@ -1,5 +1,6 @@
 import { useDispatch } from "react-redux"
 import { getRecipesByName } from "../../redux/actions"
+import { getRecipes } from "../../redux/actions"
 import { useState } from "react"
 import styles from './SearchBar.module.css'
 
@@ -13,8 +14,10 @@ const SearchBar = () => {
     
     function handlerClick (e) {
         e.preventDefault()
-        if (search.trim() !== '') {
+        if (search !== '') {
             dispatch(getRecipesByName(search))
+        }else{
+            dispatch(getRecipes())
         }
     }
     

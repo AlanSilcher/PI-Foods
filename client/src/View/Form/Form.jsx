@@ -80,8 +80,6 @@ const Form = () => {
           }
     }
 
-    
-
     return (
         <form onSubmit={submitHandler} className={styles.form}>
         <div>

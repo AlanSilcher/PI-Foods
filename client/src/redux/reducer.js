@@ -15,7 +15,6 @@ const rootReducer = (state = initialState, action) => {
                 return {...state, details: action.payload}
 
         case GET_BY_NAME:
-          console.log(action.payload)
                 return {...state, recipes: action.payload.data}
 
         case ALPHABETICAL_ORDER:
@@ -38,8 +37,7 @@ const rootReducer = (state = initialState, action) => {
               }
               return 0;
             })
-              return{
-                ...state , recipes : orderByName}
+              return{...state , recipes : orderByName}
 
         case ORDER_BY_HEALTH_SCORE:
           let orderHealthScore = action.payload === 'more-less'?
@@ -60,15 +58,12 @@ const rootReducer = (state = initialState, action) => {
             }
             return 0;
           })
-          return{
-            ...state , recipes : orderHealthScore}
+          return{...state , recipes : orderHealthScore}
 
         case FILTER_BY_DIETS:
           const allRecipes = state.filteredRecipes
-          console.log("esto es all recipes", allRecipes)
           const filterByDiets = action.payload === 'all' ? allRecipes:
           allRecipes.filter(el => el.diets.find(el => el === action.payload))
-          console.log("esto es despues del filtro", filterByDiets)
               return {...state, recipes: filterByDiets}
 
         case FILTER_BY_ORIGINS:
