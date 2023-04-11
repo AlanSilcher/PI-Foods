@@ -1,6 +1,6 @@
 # Mi proyecto de Recetas
 
-Este proyecto es una página web para que los usuarios puedan ver y buscar recetas, así como publicar sus propias recetas. Los usuarios pueden crear una cuenta para guardar sus recetas favoritas y seguir a otros usuarios para ver sus nuevas recetas.
+Este proyecto es una página web para que los usuarios puedan ver y buscar recetas, así como publicar sus propias recetas.
 
 ## Características
 
